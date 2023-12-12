@@ -10,6 +10,8 @@ const colors = require('colors')
 // Initialisation d'Express
 const app = express()
 
+const connectDB = require('./config/db')
+
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
